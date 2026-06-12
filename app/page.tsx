@@ -1,10 +1,5 @@
 import { lusitana } from "./ui/fonts";
-
-
+import { redirect } from "next/navigation";
 export default function Home() {
-  return (
-   <div>
-    <h1 className={`${lusitana}`}>hello</h1>
-    </div>
-  );
+    return redirect("/dashboard");
 }
